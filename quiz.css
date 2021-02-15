@@ -1,0 +1,93 @@
+* {
+    font-family: 'Reggae One', cursive;
+}
+
+#title {
+    height: auto;
+    background-color: rgb(32, 110, 110);
+    color: rgb(148, 189, 228);
+    font-size: 66px;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 12%;
+}
+
+.startsite {
+    background-color: rgb(32, 110, 110);
+    
+    color: rgb(148, 189, 228);
+    text-align: center;
+    font-size: 42px;
+    border-radius: 30%;
+    margin-top: 65px;
+}
+
+.startsite > label {
+    display: block;
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 34%;
+    border-radius: 45%;
+    width: 30%;
+    height: 10%;
+    background-color: rgb(148, 189, 228);
+}
+
+.button-start {
+    width: 50%;
+    height: 50%;
+    border-radius: 45%;
+    margin-top: 15px;
+    background-color: rgb(32, 110, 110);
+    color: rgb(148, 189, 228);
+    font-size: large;
+    font-weight: bold;
+}
+
+.button-start:hover {
+    opacity: 0.5;
+    transition: 0.4s;
+}
+
+.placeforquestions {
+    display: none;
+    
+}
+
+.question {
+    display: block;
+    font-size: 30px;
+    color: rgb(32, 110, 110);
+    text-align: center;
+    margin-top: 25px;
+}
+
+.question-2, .question-3, .question-4, .question-5  {
+    display: none;
+}
+.number {
+    text-align: center;
+    font-size: large;
+    color: rgb(148, 189, 228);
+    margin-top: 25px;
+}
+
+.answers {
+    background-color: rgb(173, 162, 162);
+    width: 75%;
+    height: 39%;
+    margin-top: 40px;
+    margin-left: 12%;
+    box-shadow: 0px 0px 24px 9px #141414;
+}
+
+.answers > label {
+    display: block;
+    padding: 19px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.answers > label:hover {
+    background-color: rgb(148, 189, 228);
+    transition: 0.4s;
+} 
