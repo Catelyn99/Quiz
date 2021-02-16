@@ -65,7 +65,7 @@
     margin-top: 25px;
 }
 
-.question-2, .question-3, .question-4, .question-5  {
+.hidden  {
     display: none;
 }
 .number {
@@ -94,3 +94,22 @@
     background-color: rgb(148, 189, 228);
     transition: 0.4s;
 } 
+
+.result {
+    display: none;
+}
+
+.scores {
+    text-align: center;
+    display: block;
+    font-size: 40px;
+    margin-top: 70px;
+    color: rgb(32, 110, 110);
+}
+
+.correctanswer {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+}

@@ -1,7 +1,5 @@
+<!DOCTYPE html>
 <html lang="pl">
-
-</html>
-
 <head>
     <title>Quiz</title>
     <meta charset="UTF-8" />
@@ -11,78 +9,100 @@
     <link rel="stylesheet" href="quiz.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
-
 </head>
-
 <body>
     <header>
-        <div id="title">Quiz for Programmer! </br> HTML</div>
+        <div id="title">Quiz for Programmer! <br /> HTML</div>
     </header>
     <main>
         <div id="contener">
             <section class="startsite">
                 <span>Hi! If you want to start the quiz,
                     <br /> you should click a button ;)</span>
+                <button class="button-start">START!</button>
             </section>
             <button class="button-start">START!</button>
             <section class="placeforquestions">
                 <div class="question-1">
                     <div class="number">1/5</div>
                     <span class="question">What is the correct name of HTML element for inserting a line break?</span>
-                    <div class="answers">
-                        <label for="q1-1"><input type="radio" name="q1" id="q1-1" value="a1.1">break</label></label>
-                        <label for="q1-2"><input type="radio" name="q1" id="q1-2" value="a1.2" />br</label></label>
-                        <label for="q1-3"><input type="radio" name="q1" id="q1-3" value="a1.3" />bl</label></label>
-                        <label for="q1-4"><input type="radio" name="q1" id="q1-4" value="a1.4" />lb</label></label>
+                    <div class="answers" data-question="1">
+                        <label for="q1-1"><input type="radio" data-correctanswer="false" name="q1" id="q1-1"
+                                value="a1.1">break</label>
+                        <label for="q1-2"><input type="radio" data-correctanswer="true" name="q1" id="q1-2"
+                                value="a1.2" />br</label>
+                        <label for="q1-3"><input type="radio" data-correctanswer="false" name="q1" id="q1-3"
+                                value="a1.3" />bl</label>
+                        <label for="q1-4"><input type="radio" data-correctanswer="false" name="q1" id="q1-4"
+                                value="a1.4" />lb</label>
                     </div>
                 </div>
 
-                <div class="question-2">
+                <div class="question-2 hidden">
                     <div class="number">2/5</div>
                     <span class="question">What is the correct name of HTML for creating a hyperlink?</span>
-                    <div class="answers">
-                        <label for="q2-1"><input type="radio" name="q2" id="q2-1" value="a1.1">a href="..."</label></label>
-                        <label for="q2-2"><input type="radio" name="q2" id="q2-2" value="a1.2" />a link="..."</label></label>
-                        <label for="q2-3"><input type="radio" name="q2" id="q2-3" value="a1.3" />a url="..."</label></label>
-                        <label for="q2-4"><input type="radio" name="q2" id="q2-4" value="a1.4" />link href="..."</label></label>
+                    <div class="answers" data-question="2">
+                        <label for="q2-1"><input type="radio" data-correctanswer="true" name="q2" id="q2-1"
+                                value="a1.1">a href="..."</label>
+                        <label for="q2-2"><input type="radio" data-correctanswer="false" name="q2" id="q2-2"
+                                value="a1.2" />a link="..."</label>
+                        <label for="q2-3"><input type="radio" data-correctanswer="false" name="q2" id="q2-3"
+                                value="a1.3" />a url="..."</label>
+                        <label for="q2-4"><input type="radio" data-correctanswer="false" name="q2" id="q2-4"
+                                value="a1.4" />link href="..."</label>
                     </div>
                 </div>
 
-                <div class="question-3">
+                <div class="question-3 hidden">
                     <div class="number">3/5</div>
                     <span class="question">Which character is used to indicate an end tag?</span>
-                    <div class="answers">
-                        <label for="q3-1"><input type="radio" name="q3" id="q3-1" value="a1.1"> / </label></label>
-                        <label for="q3-2"><input type="radio" name="q3" id="q3-2" value="a1.2" /> : ></label></label>
-                        <label for="q3-3"><input type="radio" name="q3" id="q3-3" value="a1.3" /> \ </label></label>
-                        <label for="q3-4"><input type="radio" name="q3" id="q3-4" value="a1.4" /> * </label></label>
+                    <div class="answers" data-question="3">
+                        <label for="q3-1"><input type="radio" data-correctanswer="true" name="q3" id="q3-1"
+                                value="a1.1"> / </label>
+                        <label for="q3-2"><input type="radio" data-correctanswer="false" name="q3" id="q3-2"
+                                value="a1.2" /> : ></label>
+                        <label for="q3-3"><input type="radio" data-correctanswer="false" name="q3" id="q3-3"
+                                value="a1.3" /> \ </label>
+                        <label for="q3-4"><input type="radio" data-correctanswer="false" name="q3" id="q3-4"
+                                value="a1.4" /> * </label>
                     </div>
                 </div>
 
-                <div class="question-4">
+                <div class="question-4 hidden">
                     <div class="number">4/5</div>
                     <span class="question">How can you make a numbered list?</span>
-                    <div class="answers">
-                        <label for="q4-1"><input type="radio" name="q4" id="q4-1" value="a1.1">td</label></label>
-                        <label for="q4-2"><input type="radio" name="q4" id="q4-2" value="a1.2" />ul</label></label>
-                        <label for="q4-3"><input type="radio" name="q4" id="q4-3" value="a1.3" />ol</label></label>
-                        <label for="q4-4"><input type="radio" name="q4" id="q4-4" value="a1.4" />list</label></label>
+                    <div class="answers" data-question="4">
+                        <label for="q4-1"><input type="radio" data-correctanswer="false" name="q4" id="q4-1"
+                                value="a1.1">td</label>
+                        <label for="q4-2"><input type="radio" data-correctanswer="false" name="q4" id="q4-2"
+                                value="a1.2" />ul</label>
+                        <label for="q4-3"><input type="radio" data-correctanswer="true" name="q4" id="q4-3"
+                                value="a1.3" />ol</label>
+                        <label for="q4-4"><input type="radio" data-correctanswer="false" name="q4" id="q4-4"
+                                value="a1.4" />list</label>
                     </div>
                 </div>
 
-                <div class="question-5">
+                <div class="question-5 hidden">
                     <div class="number">5/5</div>
                     <span class="question">What is the correct HTML for making a checkbox?</span>
-                    <div class="answers">
-                        <label for="q5-1"><input type="radio" name="q5" id="q5-1" value="a1.1">checkbox</label></label>
-                        <label for="q5-2"><input type="radio" name="q5" id="q5-2" value="a1.2" />box="check"</label></label>
-                        <label for="q5-3"><input type="radio" name="q5" id="q5-3" value="a1.3" />input type="checkbox"</label></label>
-                        <label for="q5-4"><input type="radio" name="q5" id="q5-4" value="a1.4" />input = "checkbox"</label></label>
+                    <div class="answers" data-question="5">
+                        <label for="q5-1"><input type="radio" data-correctanswer="false" name="q5" id="q5-1"
+                                value="a1.1">checkbox</label>
+                        <label for="q5-2"><input type="radio" data-correctanswer="false" name="q5" id="q5-2"
+                                value="a1.2" />box="check"</label>
+                        <label for="q5-3"><input type="radio" data-correctanswer="true" name="q5" id="q5-3"
+                                value="a1.3" />input type="checkbox"</label>
+                        <label for="q5-4"><input type="radio" data-correctanswer="false" name="q5" id="q5-4"
+                                value="a1.4" />input = "checkbox"</label>
                     </div>
                 </div>
             </section>
+            <section class="result">
+                <span class="scores">Your total scores: <span id="points"></span>/5 </span>
+            </section>
         </div>
     </main>
-
     <script src="quiz.js"></script>
 </body>
+</html>
