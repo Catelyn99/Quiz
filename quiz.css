@@ -62,7 +62,7 @@
     margin-top: 25px;
 }
 
-.question-2, .question-3, .question-4, .question-5  {
+.hidden  {
     display: none;
 }
 .number {
