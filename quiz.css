@@ -14,7 +14,6 @@
 
 .startsite {
     background-color: rgb(32, 110, 110);
-    
     color: rgb(148, 189, 228);
     text-align: center;
     font-size: 42px;
@@ -34,14 +33,18 @@
 }
 
 .button-start {
-    width: 50%;
-    height: 50%;
+    width: 35%;
+    padding: 30px;
     border-radius: 45%;
-    margin-top: 15px;
-    background-color: rgb(32, 110, 110);
-    color: rgb(148, 189, 228);
+    border: rgb(32, 110, 110);
+    display: block;
+    margin: 0 auto;
+    margin-top: 70px;
+    color: rgb(32, 110, 110);
+    background-color: rgb(148, 189, 228);
     font-size: large;
     font-weight: bold;
+    cursor: grab;
 }
 
 .button-start:hover {

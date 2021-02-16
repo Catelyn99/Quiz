@@ -6,6 +6,7 @@ const showElement = (currentElementSelector, nextElementSelector) => {
 
 document.querySelector('.button-start').addEventListener('click', function () {
     showElement('.startsite', '.placeforquestions');
+    this.style.display="none";
 });
 
 for (let q = 1; q < 5; q++) {
