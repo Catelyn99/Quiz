@@ -1,4 +1,3 @@
-
 const showElement = (currentElementSelector, nextElementSelector) => {
     document.querySelector(currentElementSelector).style.display = 'none';
     document.querySelector(nextElementSelector).style.display = 'block';
@@ -9,18 +8,19 @@ document.querySelector('.button-start').addEventListener('click', function () {
     this.style.display="none";
 });
 
-(() => {
-    const onAnswerClick = (event) => {
-        let numberOfQuestion = Number(event.target.parentElement.parentElement.dataset.question);
-        if (numberOfQuestion) {
-            event.target.style.background = "rgb(32, 110, 110)";
-            setTimeout(() => {
-                showElement(`.question-${numberOfQuestion}`, `.question-${numberOfQuestion + 1}`);
-            }, 650);
-        }
+const onAnswerClick = (event) => {
+    const parent = event.target.parentElement;
+    const numberOfQuestion = Number(parent.parentElement.dataset.question);
+    if (numberOfQuestion) {
+        parent.style.background = "rgb(32, 110, 110)";
+        setTimeout(() => {
+            showElement(`.question-${numberOfQuestion}`, `.question-${numberOfQuestion + 1}`);
+        }, 650);
     }
-    
-    let answers = document.querySelectorAll(`.answers:not([data-question="5"])`);
+}
+
+(() => {    
+    const answers = document.querySelectorAll(`.answers:not([data-question="5"])`);
     for (let element of answers) {
         element.addEventListener('click', onAnswerClick);
     }
@@ -54,7 +54,7 @@ const onClickLastQuestion = event => {
     };
 
     const removeEventListeners = () => {
-        let answers = document.querySelectorAll(`.answers:not([data-question="5"])`);
+        const answers = document.querySelectorAll(`.answers:not([data-question="5"])`);
         for (let element of answers) {
             element.removeEventListener('click', onAnswerClick);
         }
