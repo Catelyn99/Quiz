@@ -68,7 +68,11 @@ window.addEventListener('DOMContentLoaded', (event) => {
         showAllQuestions();
         highlightCorrect();
         removeEventListeners();
+        document.querySelector(`.restart-quiz`).style.display = "block";
     }
 
     document.querySelector('.answers[data-question="5"]').addEventListener('click', onClickLastQuestion);
+    document.querySelector(`.restart-quiz`).addEventListener('click', function () {
+        location.reload(true);
+    });
 });
