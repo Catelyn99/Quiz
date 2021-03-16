@@ -2,7 +2,7 @@
 Questions &amp;&amp; Answers
 
 ## Live demo
-🔗 [Quiz](catelyn99.github.io/quiz/quiz)
+🔗 [Quiz](https://catelyn99.github.io/Quiz/quiz)
 
 ## General Info
 It's a short quiz about HTML5.
