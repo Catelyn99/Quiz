@@ -36,6 +36,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
                 element.disabled = true;
                 if (element.dataset.correctanswer === 'true' && element.checked) {
                     checkAnswer += 1;
+                    debugger;
                 }
             }
             document.querySelector(`#points`).innerHTML = checkAnswer;
@@ -63,12 +64,14 @@ window.addEventListener('DOMContentLoaded', (event) => {
             document.querySelector(`.answers[data-question="5"]`).removeEventListener('click', onClickLastQuestion);
         }
 
+       setTimeout(() => {
         document.querySelector('.result').style.display = "block";
         countPoint();
         showAllQuestions();
         highlightCorrect();
         removeEventListeners();
         document.querySelector(`.restart-quiz`).style.display = "block";
+       }, 0);
     }
 
     document.querySelector('.answers[data-question="5"]').addEventListener('click', onClickLastQuestion);
