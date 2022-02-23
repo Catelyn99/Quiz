@@ -36,7 +36,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
                 element.disabled = true;
                 if (element.dataset.correctanswer === 'true' && element.checked) {
                     checkAnswer += 1;
-                    debugger;
                 }
             }
             document.querySelector(`#points`).innerHTML = checkAnswer;

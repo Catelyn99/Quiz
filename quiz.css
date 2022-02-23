@@ -1,5 +1,5 @@
 * {
-    font-family: 'Reggae One', cursive;
+    font-family: "Reggae One", cursive;
 }
 
 #title {
@@ -54,7 +54,6 @@
 
 .placeforquestions {
     display: none;
-    
 }
 
 .question {
@@ -65,9 +64,10 @@
     margin-top: 25px;
 }
 
-.hidden  {
+.hidden {
     display: none;
 }
+
 .number {
     text-align: center;
     font-size: large;
@@ -76,24 +76,30 @@
 }
 
 .answers {
-    background-color: rgb(173, 162, 162);
+    display: flex;
+    flex-direction: column;
     width: 75%;
-    height: 39%;
+    margin: 0 auto;
     margin-top: 40px;
-    margin-left: 12%;
-    box-shadow: 0px 0px 24px 9px #141414;
+    box-shadow: 0px 0px 22px 6px rgb(32, 110, 110);
 }
 
 .answers > label {
-    display: block;
-    padding: 19px;
-    font-family: 'Raleway', sans-serif;
+    padding: 20px;
+    background: linear-gradient(36deg, cadetblue 0%, transparent 22%);
+    font-family: "Raleway", sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+    .answers > label {
+        background: linear-gradient(36deg, cadetblue 0%, transparent 50%);
+    }
 }
 
 .answers > label:hover {
     background-color: rgb(148, 189, 228);
     transition: 0.4s;
-} 
+}
 
 .result {
     display: none;
@@ -117,8 +123,15 @@
 .restart-quiz {
     display: none;
     text-align: center;
-    width: 10%;
-    background-color:  rgb(32, 110, 110);
-    margin: 0 auto;
+    border: none;
+    background: linear-gradient(12deg, cadetblue 7%, transparent);
+    border-radius: 16px;
+    padding: 5px 15px;
+    margin: 20px auto;
     cursor: grab;
+}
+
+.restart-quiz:hover {
+    background-color: rgb(32, 110, 110);
+    color: white;
 }
